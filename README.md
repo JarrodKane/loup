@@ -24,7 +24,7 @@ For this area, it would have been great to have used material-ui or tailwindscss
 - Had to run `npm i --save-dev @types/styled-components` to fix an issue with ts
 - I did look into material-ui breifly because I was thinking of using it mainly so that I would not have to define my own color palette `https://material-ui.com/customization/color/`, I did not go with it because I wanted to focus on the main work first
 - I statrted off building a really simple template component that'll hold what ever is passed to it
-- Once the basic component was made, I went to create a card to be held in there
+- Once the basic component was made, you could copy that out since it contained the index and style files.
 - I also created a page for recipies
 - I then decided at the 1 hour mark to take a break for lunch, and push to the repo
 - Normally I would create feature branches but that seemed a bit exsessive for this
@@ -52,6 +52,7 @@ In total waka time recorded 3 hours and 14 mins, but I think for the majority of
 #### Styling
 
 - Might be a better idea to set text-color globally or break down text into components
+- There's no styling props or conditional props being passed into the components and passed to be styled, this could be added later
 - store the fonts locally
 - Change from using flex for the columns to using grid
 - Text us acting funning during the scale transition (Had a quick look but started taking too much time, have commented out scale for now)
