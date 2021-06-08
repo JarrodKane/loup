@@ -7,13 +7,15 @@ import { getRecipies } from "../../apis/recipie";
 
 // Components
 import Layout from "../../components/templates/Layout";
+import DisplayGrid from "../../components/organisims/DisplayGrid";
 
 const Recipies = () => {
   const [recipies, setRecipies] = useState();
 
   const callRecipies = async () => {
     const data = await getRecipies();
-    console.log(data);
+
+    setRecipies(data);
   };
 
   // Using useEffect to just call the data on first load of this page, could have used callStaicProps since this is a Next.js but decided to go with this for now
@@ -29,7 +31,9 @@ const Recipies = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout>asdasd</Layout>
+      <Layout>
+        <DisplayGrid recipies={recipies} />
+      </Layout>
     </div>
   );
 };

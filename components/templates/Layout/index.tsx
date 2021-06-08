@@ -1,15 +1,15 @@
 import React from "react";
 
-import { Page } from "./styles";
+import { PageTemplate } from "./styles";
 
 interface Props {}
 
 // I do want children so just decided to use a RECT.FC to get them quickly
-const Layout: React.FC<Props> = ({}) => {
+const Layout: React.FC<Props> = ({ children }) => {
   return (
-    <Page>
-      <main>asd</main>
-    </Page>
+    <PageTemplate>
+      <div>{children}</div>
+    </PageTemplate>
   );
 };
 
